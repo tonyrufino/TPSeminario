@@ -54,7 +54,7 @@ public class LoginFrame extends JFrame {
 
     private void solicitarContrasenaAdmin() {
         JPasswordField passwordField = new JPasswordField();
-        int option = JOptionPane.showConfirmDialog(this, passwordField, "Ingrese contraseña de administrador", JOptionPane.OK_CANCEL_OPTION);
+        int option = JOptionPane.showConfirmDialog(this, passwordField, "Ingrese contraseña de administrador ((admin))", JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
             String password = new String(passwordField.getPassword());
             if (password.equals("admin")) {
